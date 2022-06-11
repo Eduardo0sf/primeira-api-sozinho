@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    
+}
+
+.content {
+
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  
+    padding-inline: 6rem;
+    max-width: 400rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+
+/* textos */
+
+h1 {
+    font-size: 4rem;
+    color: #fff;
+    
+margin-bottom: 1rem;
+}
+.dados {
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+    
+    width: 60rem;
+    position: relative;
+
+
+}
+
+ h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+   
+}
+
+.roll {
+    width: 20rem;
+    height: 18rem;
+    display: inline;
+    margin: auto;
+   
+
+    color: #000;
+
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10rem;
+
+    border-radius: 2rem;
+}
+
+#dado1 {
+    display: none;
+
+}
+
+#dado1.dadob {
+    display: flex;
+    background: #20b2aa;
+
+   
+}
+
+#dado2 {
+    display: none;
+    
+}
+
+#dado2.dadoa {
+    background: #ffd700;
+    display: flex;
+  
+}
+
+/* BOTOES */
+
+#btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    gap: 5rem;
+
+    height: 7rem;
+    width: 100%;
+    margin-top: 1rem;
+    
+
+ 
+}
+
+#btns button {
+    width: 13rem;
+    height: 4rem;
+    text-align: center;
+    padding: 1rem;
+    color: #000;
+
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    border-radius: 0.8rem;
+    cursor: pointer;
+
+    border: none;
+    margin-bottom: 2rem;
+}
+
+#btns button:nth-child(1) {
+    background: #20b2aa;
+}
+
+#btns button:nth-child(2) {
+    background: #ffd700;
+}
+
+#btns button:nth-child(3) {
+    background: #fff;
+}
+
+@media (max-width: 600px) {
+  
+    .dados {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        margin-top: 2rem;
+
+        flex-direction: column;
+        flex-wrap: wrap;
+       
+    }
+
+    #btns {
+       flex-wrap: wrap;
+       gap: 1rem;
+    }
+
+    
+
+    .roll {
+        width: 18rem;
+        height: 15rem;
+        font-size: 4rem;
+
+        flex-wrap: wrap;
+    }
+
+
+
+
+}
